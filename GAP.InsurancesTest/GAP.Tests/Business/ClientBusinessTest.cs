@@ -27,7 +27,7 @@ namespace GAP.Tests.Business
 
             Client clientNull = null;          
 
-            clientRepositoryMock.Setup(x => x.GetByDocument(98695330)).Returns(clientDiego);
+            clientRepositoryMock.Setup(x => x.GetByDocument(98695630)).Returns(clientDiego);
             clientRepositoryMock.Setup(x => x.GetByDocument(123)).Returns(clientNull);   
 
             _clientBusiness = new ClientBusiness(clientRepositoryMock.Object);

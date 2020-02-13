@@ -13,5 +13,6 @@ namespace GAP.Business.Interfaces
         bool UpdInsuranceById(Insurance insurance, int id);
         bool DelInsuranceById(int id);
         bool InsertInsurance(Insurance insurance);
+        bool ValidateInsurance(int idCoveringType, int idRiskType);
     }
 }
